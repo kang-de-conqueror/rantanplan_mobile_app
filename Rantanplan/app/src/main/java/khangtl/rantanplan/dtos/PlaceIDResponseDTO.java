@@ -1,0 +1,22 @@
+package khangtl.rantanplan.dtos;
+
+import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
+
+public class PlaceIDResponseDTO implements Serializable {
+    @SerializedName("place_id")
+    private String id;
+
+    public PlaceIDResponseDTO(String id) {
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+}
